@@ -1,0 +1,39 @@
+.block1 {
+  /* max-width: 1920px; */
+  height: 900px;
+  color: #fff;
+  background-image: url(/img/block1.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.block1__content {
+  max-width: 800px;
+}
+
+.block1__title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.block1__text {
+  margin-top: 65px;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 800px;
+}
+
+.block1__catalogBtn {
+  margin-top: 80px;
+  width: 200px;
+  height: 70px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
