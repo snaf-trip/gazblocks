@@ -1,5 +1,12 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
 
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Circe"), url("/fonts/circe/CRC25.otf");
+}
 /* Document
    ========================================================================== */
 
@@ -23,6 +30,7 @@ html {
  */
 
 body {
+  font-family: "Circe";
   margin: 0;
 }
 
