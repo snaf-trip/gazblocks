@@ -44,3 +44,10 @@
   border-color: #66fcf1;
   color: #3d8d87;
 }
+
+@media screen and (max-width: 475px) {
+  .block1__title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
