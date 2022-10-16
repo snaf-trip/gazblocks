@@ -2,7 +2,7 @@
   height: 900px;
   color: #fff;
   background-image: url(/img/block1.png);
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +21,7 @@
 }
 
 .block1__text {
+  font-family: Roboto, system-ui;
   margin-top: 65px;
   font-size: 24px;
   font-weight: 400;
@@ -34,9 +35,10 @@
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid #66fcf1;
   background-color: rgba(0, 0, 0, 0);
   transition: 0.6s;
+  cursor: pointer;
 }
 
 .block1__catalogBtn:hover {

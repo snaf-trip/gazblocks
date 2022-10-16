@@ -48,7 +48,7 @@ html {
  */
 
 body {
-  font-family: "Circe";
+  font-family: Roboto, system-ui;
   margin: 0;
 }
 
