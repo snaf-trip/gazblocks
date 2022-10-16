@@ -2,10 +2,10 @@
   height: 900px;
   color: #fff;
   background-image: url(/img/block1.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,5 +53,11 @@
 @media screen and (max-width: 475px) {
   .block1__title {
     font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .block1 {
+    background-image: url(/img/block1adaptive.jpg);
   }
 }
