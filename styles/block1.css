@@ -2,7 +2,10 @@
   height: 900px;
   color: #fff;
   background-image: url(/img/block1.png);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
