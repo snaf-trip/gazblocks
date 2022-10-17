@@ -53,7 +53,7 @@
   }
 
   .header__mobileMenu {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -61,19 +61,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    top: 68px;
-    height: calc(100% - 60px);
+    top: 60px;
+    /* height: calc(100% - 60px); */
     background: #5671f6;
     flex-grow: 1;
-    height: 100%;
+    height: 100vh;
   }
 
-  .header__mobileMenu {
+  .header__mobileMenu_open {
     display: block;
   }
 
   .header__menuButton {
     display: block;
+    cursor: pointer;
   }
 
   svg {
