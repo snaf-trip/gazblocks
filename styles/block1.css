@@ -1,7 +1,7 @@
 .block1 {
   height: calc(100vh - 80px);
   color: #fff;
-  background-image: url(../img/block1.jpg);
+  background-image: url(https://snaf-trip.github.io/img/block1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -64,6 +64,6 @@
 
 @media screen and (max-width: 900px) {
   .block1 {
-    background-image: url(../img/block1adaptive.jpg);
+    background-image: url(https://snaf-trip.github.io/img/block1adaptive.jpg);
   }
 }
