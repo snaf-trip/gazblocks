@@ -1,3 +1,8 @@
 /* сюда писать импорты других scss файлов */
 @import url(normalize.css);
+@import url(header.css);
 @import url(block1.css);
+
+.no-scroll {
+  overflow: hidden;
+}

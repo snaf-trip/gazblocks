@@ -1,0 +1,181 @@
+.header {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  background-color: #1F2833;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header__navBlock {
+  /* font-family: "Circe"; */
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__navItem {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.header__navItem:hover {
+  color: #66FCF1;
+}
+
+.header__menuButton {
+  display: none;
+}
+
+.test {
+  height: 1000px;
+}
+
+.header__mobileMenu {
+  display: none;
+}
+
+
+
+
+@media (max-width: 785px) {
+  .header {
+    height: 60px;
+    padding: 0px 30px;
+  }
+
+  .header__navBlock {
+    display: none;
+  }
+
+  .header__mobileMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    background: #1F2833;
+    flex-grow: 1;
+    height: 100vh;
+    padding: 0 74px;
+  }
+
+  .header__mobileMenu_open {
+    display: flex;
+  }
+
+  .header__mobileNavBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__mobileNavItem {
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 40px 0 30px;
+  }
+
+  .header__mobileNavItem:active {
+    color: #66FCF1;
+  }
+
+  .header__mobileLine {
+    width: 100%;
+  }
+
+  .header__menuButton {
+    display: block;
+    cursor: pointer;
+  }
+
+  svg {
+    height: 60px;
+    position: absolute;
+    width: 60px;
+  }
+
+  .plate {
+    height: 60px;
+    width: 60px;
+  }
+
+  .burger {
+    filter: url(#gooeyness);
+  }
+
+  .x {
+    transform: scale(0);
+    transition: transform 400ms;
+  }
+
+  .line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  }
+
+  .x .line {
+    stroke-width: 5.5px;
+  }
+
+  .plate4 .x {
+    transition: transform 400ms;
+  }
+
+  .plate4 .line {
+    transform-origin: 50%;
+    transition: transform 400ms 100ms;
+  }
+
+  .active.plate4 .line {
+    transition: transform 400ms;
+  }
+
+  .active.plate4 .line1 {
+    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+  }
+
+  .active.plate4 .line2 {
+    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+  }
+
+  .active.plate4 .line3 {
+    transform: translateY(0px) rotate(45deg) scale(.7);
+  }
+
+  .active.plate4 .line4 {
+    transform: translateY(0px) rotate(-45deg) scale(.7);
+  }
+
+  .active.plate4 .line5 {
+    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+  }
+
+  .active.plate4 .line6 {
+    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+  }
+
+  .active.plate4 .x {
+    transition: transform 400ms 100ms;
+    transform: scale(1);
+  }
+
+}

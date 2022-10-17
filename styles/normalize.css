@@ -19,12 +19,14 @@
   font-weight: 600;
   src: local("Circe"), url("/fonts/circe/CRC55.otf");
 }
+
 @font-face {
   font-family: "Circe";
   font-style: normal;
   font-weight: 700;
   src: local("Circe"), url("/fonts/circe/CRC65.otf");
 }
+
 /* Document
    ========================================================================== */
 

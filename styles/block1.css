@@ -1,5 +1,5 @@
 .block1 {
-  height: 900px;
+  height: calc(100vh - 80px);
   color: #fff;
   background-image: url(/img/block1.jpg);
   background-repeat: no-repeat;
@@ -48,6 +48,12 @@
   background-color: #66fcf1;
   border-color: #66fcf1;
   color: #3d8d87;
+}
+
+@media screen and (max-width: 785px) {
+  .block1 {
+    height: calc(100vh - 60px);
+  }
 }
 
 @media screen and (max-width: 475px) {

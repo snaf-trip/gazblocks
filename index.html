@@ -1,23 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <title>ПСК Газоблоки</title>
-  </head>
-  <body class="body">
-    <div class="block1">
-      <div class="block1__content">
-        <div class="block1__title">Газобетонные блоки</div>
-        <div class="block1__text">
-          Текст заглушка коротенький типо какое-то кратенькое описание.
-          Кратенькое описание текст заглушка коротенький типо какое-то. Бла бла
-          ба Как то так вобщем чет нужно написать.
-        </div>
-        <button class="block1__catalogBtn">каталог</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>ПСК Газоблоки</title>
+</head>
+
+<body id="body">
+  <header class="header" id="header">
+    <img src="img/logo.svg" class="header__logo" alt="logo" width="89" height="29">
+    <nav class="header__navBlock">
+      <a class="header__navItem">Производство</a>
+      <a class="header__navItem">Каталог</a>
+      <a class="header__navItem">Контакты</a>
+      <a class="header__navItem">FAQ</a>
+    </nav>
+
+    <div class="header__menuButton">
+      <svg>
+        <defs>
+          <filter id="gooeyness">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+              result="gooeyness" />
+            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="plate plate4" onclick="this.classList.toggle('active')">
+        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+          <path class="line line1" d="M 50,35 H 30" />
+          <path class="line line2" d="M 50,35 H 70" />
+          <path class="line line3" d="M 50,50 H 30" />
+          <path class="line line4" d="M 50,50 H 70" />
+          <path class="line line5" d="M 50,65 H 30" />
+          <path class="line line6" d="M 50,65 H 70" />
+        </svg>
+        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+          <path class="line" d="M 34,32 L 66,68" />
+          <path class="line" d="M 66,32 L 34,68" />
+        </svg>
       </div>
     </div>
-  </body>
+
+    <div class="header__mobileMenu">
+      <nav class="header__mobileNavBlock">
+        <a class="header__mobileNavItem">Производство</a>
+        <hr class="header__mobileLine" size="1px" />
+        <a class="header__mobileNavItem">Каталог</a>
+        <hr class="header__mobileLine" size="1px" />
+        <a class="header__mobileNavItem">Контакты</a>
+        <hr class="header__mobileLine" size="1px" />
+        <a class="header__mobileNavItem">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="block1">
+    <div class="block1__content">
+      <div class="block1__title">Газобетонные блоки</div>
+      <div class="block1__text">
+        Текст заглушка коротенький типо какое-то кратенькое описание.
+        Кратенькое описание текст заглушка коротенький типо какое-то. Бла бла
+        ба Как то так вобщем чет нужно написать.
+      </div>
+      <button class="block1__catalogBtn">каталог</button>
+    </div>
+  </div>
+
+
+  <div class="test"></div>
+
+  <script src="js/scrollDetected.js"></script>
+  <script src="js/mobileMenu.js"></script>
+
+</body>
+
 </html>
