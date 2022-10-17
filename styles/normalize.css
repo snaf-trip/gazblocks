@@ -1,4 +1,31 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Circe"), url("/fonts/circe/CRC25.otf");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Circe"), url("/fonts/circe/CRC35.otf");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Circe"), url("/fonts/circe/CRC55.otf");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Circe"), url("/fonts/circe/CRC65.otf");
+}
 
 /* Document
    ========================================================================== */
@@ -23,6 +50,7 @@ html {
  */
 
 body {
+  font-family: Roboto, system-ui;
   margin: 0;
 }
 
