@@ -84,18 +84,15 @@
       </div>
     </header>
 
-    <div class="block1" style="background-image: url(img/block1.jpg)">
-      <!-- <img src="img/block1.jpg">
-    <img src="img/block1adaptive.jpg"> -->
-      <div class="block1__content">
-        <h1 class="block1__title">Газобетонные блоки</h1>
-        <p class="block1__text">
-          Текст заглушка коротенький типо какое-то кратенькое описание.
-          Кратенькое описание текст заглушка коротенький типо какое-то. Бла бла
-          ба Как то так вобщем чет нужно написать.
-        </p>
-        <a class="block1__catalogBtn">каталог</a>
-      </div>
+  <div class="block1">
+    <div class="block1__content">
+      <h1 class="block1__title">Газобетонные блоки</h1>
+      <p class="block1__text">
+        Текст заглушка коротенький типо какое-то кратенькое описание.
+        Кратенькое описание текст заглушка коротенький типо какое-то. Бла бла
+        ба Как то так вобщем чет нужно написать.
+      </p>
+      <a class="block1__catalogBtn">каталог</a>
     </div>
 
     <div class="products">
@@ -103,6 +100,22 @@
         <h1 class="products__title">Наша продукция</h1>
       </div>
     </div>
+  <script src="js/scrollDetected.js"></script>
+  <script src="js/mobileMenu.js"></script>
+
+  <style scoped>
+    .block1 {
+      background-image: url("img/block1.jpg");
+    }
+
+    @media (max-width: 900px) {
+      .block1 {
+        background-image: url("img/block1adaptive.jpg");
+      }
+    }
+
+  </style>
+</body>
 
     <script src="js/scrollDetected.js"></script>
     <script src="js/mobileMenu.js"></script>
