@@ -14,7 +14,20 @@
 .products__title {
   margin: 0;
   margin-top: 80px;
-  color: #fff;
+  color: #66fcf1;
   font-size: 60px;
   font-weight: bold;
+}
+.products__title::after {
+  content: "";
+  display: block;
+  width: 230px;
+  padding-top: 10px;
+  border-bottom: 4px solid #fff;
+}
+
+@media screen and (max-width: 475px) {
+  .products__title {
+    font-size: 48px;
+  }
 }
