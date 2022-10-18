@@ -59,7 +59,7 @@
     </div>
   </header>
 
-  <div class="block1" style="background-image: url(img/block1.jpg);">
+  <div class="block1">
     <div class="block1__content">
       <h1 class="block1__title">Газобетонные блоки</h1>
       <p class="block1__text">
@@ -75,6 +75,19 @@
 
   <script src="js/scrollDetected.js"></script>
   <script src="js/mobileMenu.js"></script>
+
+  <style scoped>
+    .block1 {
+      background-image: url("img/block1.jpg");
+    }
+
+    @media (max-width: 900px) {
+      .block1 {
+        background-image: url("img/block1adaptive.jpg");
+      }
+    }
+
+  </style>
 </body>
 
 </html>
