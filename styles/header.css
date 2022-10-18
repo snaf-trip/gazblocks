@@ -45,7 +45,7 @@
 @media (max-width: 785px) {
   .header {
     height: 60px;
-    padding: 0px 30px;
+    padding: 0px 10px 0px 30px;
   }
 
   .header__navBlock {
@@ -64,7 +64,6 @@
     background: #1F2833;
     flex-grow: 1;
     height: 100vh;
-    padding: 0 74px;
   }
 
   .header__mobileMenu_open {
@@ -74,10 +73,17 @@
   .header__mobileNavBlock {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin-top: 20px;
   }
 
   .header__mobileNavItem {
+    display: flex;
+    height: 105px;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
     cursor: pointer;
     color: #ffffff;
     font-family: 'Circe';
@@ -86,7 +92,7 @@
     font-size: 24px;
     line-height: 35px;
     text-transform: uppercase;
-    margin: 40px 0 30px;
+    /* margin: 40px 0 30px; */
   }
 
   .header__mobileNavItem:active {
@@ -95,6 +101,7 @@
 
   .header__mobileLine {
     width: 100%;
+    margin: 0;
   }
 
   .header__menuButton {
