@@ -19,12 +19,14 @@
 }
 
 .block1__title {
+  margin: 0;
   font-size: 64px;
   font-weight: bold;
 }
 
 .block1__text {
   font-family: Roboto, system-ui;
+  margin: 0;
   margin-top: 65px;
   font-size: 22px;
   font-weight: 400;
@@ -32,6 +34,9 @@
 }
 
 .block1__catalogBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 80px;
   width: 200px;
   height: 70px;
