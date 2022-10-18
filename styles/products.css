@@ -1,0 +1,18 @@
+.products {
+  height: 972px;
+  background-color: #1f2833;
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.products__content {
+  width: 1180px;
+}
+
+.products__title {
+  margin: 0;
+  margin-top: 80px;
+  color: #fff;
+}
