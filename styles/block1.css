@@ -15,7 +15,8 @@
 .block1__content {
   margin-left: 75px;
   margin-right: 75px;
-  max-width: 800px;
+  width: 1040px;
+  max-width: 1040px;
 }
 
 .block1__title {
@@ -53,6 +54,12 @@
   background-color: #66fcf1;
   border-color: #66fcf1;
   color: #3d8d87;
+}
+
+@media screen and (max-width: 1180px) {
+  .block1__content {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 785px) {

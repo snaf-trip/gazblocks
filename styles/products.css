@@ -8,11 +8,13 @@
 }
 
 .products__content {
-  width: 1180px;
+  width: 1040px;
 }
 
 .products__title {
   margin: 0;
   margin-top: 80px;
   color: #fff;
+  font-size: 60px;
+  font-weight: bold;
 }
