@@ -45,7 +45,7 @@
 @media (max-width: 785px) {
   .header {
     height: 60px;
-    padding: 0px 30px;
+    padding: 0px 10px 0px 30px;
   }
 
   .header__navBlock {
@@ -64,7 +64,6 @@
     background: #1F2833;
     flex-grow: 1;
     height: 100vh;
-    padding: 0 74px;
   }
 
   .header__mobileMenu_open {
@@ -74,7 +73,7 @@
   .header__mobileNavBlock {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
 
   .header__mobileNavItem {
