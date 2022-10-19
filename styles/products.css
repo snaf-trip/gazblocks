@@ -82,6 +82,14 @@
   height: 50px;
   background-color: #fff;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.products__productInfoBtn:hover {
+  background-color: #66fcf1;
+  border-color: #66fcf1;
+  color: #3d8d87;
 }
 
 .products__showMore {
@@ -121,6 +129,16 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.products__showMoreSvg {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.products__showMoreSvg:hover {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .products__showMore_btnText {
