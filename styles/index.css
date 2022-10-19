@@ -2,7 +2,13 @@
 @import url(normalize.css);
 @import url(header.css);
 @import url(block1.css);
+@import url(ownProduction.css);
 
 .no-scroll {
   overflow: hidden;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
 }
