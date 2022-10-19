@@ -70,4 +70,8 @@
   .block1 {
     background-image: url(https://snaf-trip.github.io/img/block1adaptive.jpg);
   }
+
+  .block1__content {
+    width: 90%;
+  }
 }
