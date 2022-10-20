@@ -8,7 +8,7 @@ let flag = false;
 showMoreBtn.onclick = () => {
   console.log(flag);
   if (flag === false) {
-    productsList.style.height = "auto";
+    productsList.style.height = "1054px";
     hiden.style.display = "flex";
     buttonText.textContent = "скрыть";
   } else {
