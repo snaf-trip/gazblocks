@@ -1,3 +1,7 @@
+.hiden {
+  display: none;
+}
+
 .products {
   min-height: 972px;
   background-color: #1f2833;
@@ -6,7 +10,7 @@
 }
 
 .products__content {
-  max-width: 1430px;
+  max-width: 1092px;
 }
 
 .products__title {
@@ -33,6 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 527px;
 }
 
 .products__item {
@@ -151,6 +156,8 @@
   color: #fff;
   font-size: 15px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 475px) {
