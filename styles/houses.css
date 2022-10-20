@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 650px;
+  height: calc(90vh - 80px);
+  max-height: 737px;
   padding: 80px;
   margin-top: 80px;
 }
