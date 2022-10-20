@@ -180,3 +180,12 @@
     width: 200px;
   }
 }
+
+@media screen and (max-width: 670px) {
+  .products__showMore::before {
+    display: none;
+  }
+  .products__showMore::after {
+    display: none;
+  }
+}
