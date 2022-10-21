@@ -2,10 +2,6 @@
   background-color: red;
 }
 
-.hiden {
-  display: none;
-}
-
 .products {
   min-height: 972px;
   background-color: #1f2833;
@@ -52,6 +48,22 @@
   background-color: #fff;
   width: 330px;
   height: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .products__item:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .products__item:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+.products__item.isVisible {
+  display: list-item;
 }
 
 .products__itemImg {
