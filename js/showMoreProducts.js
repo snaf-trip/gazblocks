@@ -9,12 +9,14 @@ let flag = false;
 showMoreBtn.onclick = () => {
   console.log(flag);
   if (flag === false) {
-    productsList.style.height = "1054px";
+    productsList.style.height = "auto";
     hiden.style.display = "flex";
+    hiden.style.flexWrap = "wrap";
+    hiden.style.justifyContent = "center";
     buttonText.textContent = "скрыть";
     showMoreSvg.style.transform = "rotate(135deg)";
   } else {
-    productsList.style.height = "527px";
+    productsList.style.height = "auto";
     hiden.style.display = "none";
     buttonText.textContent = "показать ещё";
     showMoreSvg.style.transform = "rotate(225deg)";
