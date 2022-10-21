@@ -50,6 +50,12 @@
   height: 500px;
 }
 
+@media screen and (max-width: 668px) {
+  .products__item:nth-child(n + 3) {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .products__item:nth-child(n + 5) {
     display: none;
