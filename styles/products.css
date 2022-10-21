@@ -42,7 +42,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 527px;
-  transition: 0.6s;
+  /* transition: 0.6s; */
 }
 
 .products__item {
@@ -147,13 +147,7 @@
 }
 
 .products__showMoreSvg {
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
-}
-
-.products__showMoreSvg:hover {
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
 }
 
 .products__showMore_btnText {
