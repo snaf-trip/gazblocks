@@ -1,7 +1,6 @@
 let showMoreBtn = document.querySelector(".products__showMoreBtn");
 let buttonText = document.querySelector(".products__showMore_btnText");
 let showMoreSvg = document.querySelector(".products__showMoreSvg");
-
 let productsList = document.querySelector(".products__list");
 let prodListArr = Array.from(productsList.children);
 
@@ -13,7 +12,6 @@ showMoreBtn.onclick = () => {
     showMoreSvg.style.transform = "rotate(135deg)";
   } else {
     prodListArr.forEach((el) => el.classList.remove("isVisible"));
-
     buttonText.textContent = "показать ещё";
     showMoreSvg.style.transform = "rotate(225deg)";
   }
