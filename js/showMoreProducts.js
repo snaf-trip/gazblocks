@@ -1,4 +1,4 @@
-let showMoreBtn = document.querySelector(".products__showMoreBtn");
+let showMoreBtn = document.querySelector(".products__showMore_btnAndText");
 let buttonText = document.querySelector(".products__showMore_btnText");
 let showMoreSvg = document.querySelector(".products__showMoreSvg");
 let productsList = document.querySelector(".products__list");

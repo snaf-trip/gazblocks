@@ -109,7 +109,7 @@
   height: 50px;
   background-color: #fff;
   font-weight: bold;
-  cursor: pointer;
+
   transition: 0.6s;
 }
 
@@ -129,6 +129,7 @@
 .products__showMore_btnAndText {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .products__showMore::before {
