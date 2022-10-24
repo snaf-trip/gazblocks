@@ -61,3 +61,81 @@
   border-color: #66fcf1;
   color: #3d8d87;
 }
+
+@media (max-width: 1200px) {
+  .houses {
+    /* background-image: url("../img/housesBig.jpg"); */
+    /* padding: 40px; */
+
+  }
+
+  .houses__content {
+    padding: 25px;
+  }
+
+  .houses__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .houses__text {
+    /* font-size: 18px; */
+  }
+
+  .houses__more {
+    width: 215px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  .houses {
+    /* background-image: url("../img/housesBig.jpg"); */
+    padding: 40px;
+
+  }
+
+  .houses__content {
+    padding: 25px;
+  }
+
+  .houses__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .houses__text {
+    /* font-size: 18px; */
+  }
+
+  .houses__more {
+    width: 215px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 705px) {
+  .houses {
+    /* background-image: url("../img/housesBig.jpg"); */
+    padding: 40px;
+
+  }
+
+  .houses__content {
+    padding: 25px;
+  }
+
+  .houses__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .houses__text {
+    /* font-size: 18px; */
+  }
+
+  .houses__more {
+    width: 215px;
+    height: 40px;
+  }
+}
