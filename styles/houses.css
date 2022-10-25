@@ -32,6 +32,13 @@
   margin: 0;
 }
 
+.houses__titleLine {
+  max-width: 300px;
+  width: 100%;
+  height: 4px;
+  background-color: #66FCF1;
+}
+
 .houses__text {
   font-size: 22px;
   color: #FFFFFF;
@@ -63,36 +70,22 @@
 }
 
 @media (max-width: 1200px) {
-  .houses {
-    /* background-image: url("../img/housesBig.jpg"); */
-    /* padding: 40px; */
-
-  }
-
   .houses__content {
     padding: 25px;
   }
+}
 
+@media (max-width: 1080px) {
   .houses__title {
     font-size: 40px;
     line-height: 45px;
-  }
-
-  .houses__text {
-    /* font-size: 18px; */
-  }
-
-  .houses__more {
-    width: 215px;
-    height: 40px;
   }
 }
 
 @media (max-width: 840px) {
   .houses {
-    /* background-image: url("../img/housesBig.jpg"); */
+    background-image: url("../img/housesBig.jpg");
     padding: 40px;
-
   }
 
   .houses__content {
@@ -104,8 +97,28 @@
     line-height: 45px;
   }
 
-  .houses__text {
-    /* font-size: 18px; */
+  .houses__titleLine {
+    width: 40%;
+  }
+}
+
+@media (max-width: 705px) {
+  .houses {
+    background-image: url("../img/housesBig.jpg");
+    padding: 40px;
+  }
+
+  .houses__content {
+    padding: 25px;
+  }
+
+  .houses__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .houses__titleLine {
+    width: 40%;
   }
 
   .houses__more {
@@ -114,28 +127,36 @@
   }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 585px) {
   .houses {
-    /* background-image: url("../img/housesBig.jpg"); */
-    padding: 40px;
+    height: calc(100vh - 80px);
 
   }
 
-  .houses__content {
-    padding: 25px;
-  }
-
-  .houses__title {
-    font-size: 40px;
-    line-height: 45px;
+  .houses__titleLine {
+    width: 50%;
   }
 
   .houses__text {
-    /* font-size: 18px; */
+    font-size: 20px;
   }
 
-  .houses__more {
-    width: 215px;
-    height: 40px;
+}
+
+@media (max-width: 495px) {
+
+  .houses {
+    height: auto;
   }
+
+  .houses__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .houses__text {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
 }
