@@ -13,7 +13,7 @@ showMoreBtn.onclick = () => {
   } else {
     prodListArr.forEach((el) => el.classList.remove("isVisible"));
     buttonText.textContent = "показать ещё";
-    showMoreSvg.style.transform = "rotate(225deg)";
+    showMoreSvg.style.transform = "rotate(0)";
   }
   flag = !flag;
 };
