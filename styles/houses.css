@@ -1,6 +1,7 @@
 .houses {
   background-image: url("../img/houses.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   display: flex;
   align-items: center;
