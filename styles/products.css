@@ -18,6 +18,7 @@
   font-size: 60px;
   font-weight: bold;
 }
+
 .products__title::after {
   content: "";
   display: block;
@@ -108,8 +109,9 @@
   border: 3px solid #66fcf1;
   height: 50px;
   background-color: #fff;
+  color: #323232;
   font-weight: bold;
-
+  cursor: pointer;
   transition: 0.6s;
 }
 
@@ -183,6 +185,7 @@
     width: 300px;
     height: 500px;
   }
+
   .products__itemImg {
     width: 300px;
     height: 200px;
@@ -195,6 +198,7 @@
   .products__showMore::before {
     width: 200px;
   }
+
   .products__showMore::after {
     width: 200px;
   }
@@ -204,6 +208,7 @@
   .products__showMore::before {
     display: none;
   }
+
   .products__showMore::after {
     display: none;
   }
