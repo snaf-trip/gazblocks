@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>ПСК Газоблоки</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <title>ПСК Газоблоки</title>
-</head>
-
-<body id="body">
-  <header class="header" id="header">
-    <img src="img/logo.svg" class="header__logo" alt="logo" width="89" height="29" />
-    <nav class="header__navBlock">
-      <a class="header__navItem">Производство</a>
-      <a class="header__navItem">Каталог</a>
-      <a class="header__navItem">Контакты</a>
-      <a class="header__navItem">FAQ</a>
-    </nav>
-
-    <div class="header__menuButton">
-      <svg>
-        <defs>
-          <filter id="gooeyness">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
-              result="gooeyness" />
-            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="plate plate4" onclick="this.classList.toggle('active')">
-        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-          <path class="line line1" d="M 50,35 H 30" />
-          <path class="line line2" d="M 50,35 H 70" />
-          <path class="line line3" d="M 50,50 H 30" />
-          <path class="line line4" d="M 50,50 H 70" />
-          <path class="line line5" d="M 50,65 H 30" />
-          <path class="line line6" d="M 50,65 H 70" />
-        </svg>
-        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-          <path class="line" d="M 34,32 L 66,68" />
-          <path class="line" d="M 66,32 L 34,68" />
-        </svg>
-      </div>
-    </div>
-
-    <div class="header__mobileMenu">
-      <nav class="header__mobileNavBlock">
-        <a class="header__mobileNavItem">Производство</a>
-        <hr class="header__mobileLine" size="1px" />
-        <a class="header__mobileNavItem">Каталог</a>
-        <hr class="header__mobileLine" size="1px" />
-        <a class="header__mobileNavItem">Контакты</a>
-        <hr class="header__mobileLine" size="1px" />
-        <a class="header__mobileNavItem">FAQ</a>
+  <!-- < id="body"> -->
+    <header class="header" id="header">
+      <img
+        src="img/logo.svg"
+        class="header__logo"
+        alt="logo"
+        width="89"
+        height="29"
+      />
+      <nav class="header__navBlock">
+        <a class="header__navItem">Производство</a>
+        <a class="header__navItem">Каталог</a>
+        <a class="header__navItem">Контакты</a>
+        <a class="header__navItem">FAQ</a>
       </nav>
-    </div>
-  </header>
+
+      <div class="header__menuButton">
+        <svg>
+          <defs>
+            <filter id="gooeyness">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="2.2"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="gooeyness"
+              />
+              <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="plate plate4" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 50,35 H 30" />
+            <path class="line line2" d="M 50,35 H 70" />
+            <path class="line line3" d="M 50,50 H 30" />
+            <path class="line line4" d="M 50,50 H 70" />
+            <path class="line line5" d="M 50,65 H 30" />
+            <path class="line line6" d="M 50,65 H 70" />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="header__mobileMenu">
+        <nav class="header__mobileNavBlock">
+          <a class="header__mobileNavItem">Производство</a>
+          <hr class="header__mobileLine" size="1px" />
+          <a class="header__mobileNavItem">Каталог</a>
+          <hr class="header__mobileLine" size="1px" />
+          <a class="header__mobileNavItem">Контакты</a>
+          <hr class="header__mobileLine" size="1px" />
+          <a class="header__mobileNavItem">FAQ</a>
+        </nav>
+      </div>
+    </header>
 
   <div class="block1">
     <div class="block1__content">
@@ -90,11 +115,167 @@
     </div>
   </div>
 
-  <div class="test"></div>
-
+    <div class="products">
+      <div class="products__content">
+        <h1 class="products__title">Наша продукция</h1>
+        <ul class="products__list">
+          <li class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg">
+            <div class="products__productInfo">
+              <h3 class="products__productName">Газоблок D600</h3>
+            <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Ширина, мм</div>
+              <div class="products__productPropVal">300</div>
+            </div>
+            <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Длина, мм</div>
+              <div class="products__productPropVal">265</div>
+            </div>
+              <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Высота, мм</div>
+              <div class="products__productPropVal">250</div>
+            </div>
+              <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Плотность</div>
+              <div class="products__productPropVal">D600</div>
+            </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li class="products__item">
+          <img class="products__itemImg" src="img/exampleProduct.jpg">
+          <div class="products__productInfo">
+            <div class="products__productName">Газоблок D600</div>
+          <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Ширина, мм</div>
+            <div class="products__productPropVal">300</div>
+          </div>
+          <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Длина, мм</div>
+            <div class="products__productPropVal">265</div>
+          </div>
+            <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Высота, мм</div>
+            <div class="products__productPropVal">250</div>
+          </div>
+            <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Плотность</div>
+            <div class="products__productPropVal">D600</div>
+          </div>
+            <button class="products__productInfoBtn">подробнее</button>
+          </div>
+          </li>
+          <li class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg">
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D600</div>
+            <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Ширина, мм</div>
+              <div class="products__productPropVal">300</div>
+            </div>
+            <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Длина, мм</div>
+              <div class="products__productPropVal">265</div>
+            </div>
+              <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Высота, мм</div>
+              <div class="products__productPropVal">250</div>
+            </div>
+              <div class="products__productProp_styleDiv">
+              <div class="products__productProp">Плотность</div>
+              <div class="products__productPropVal">D600</div>
+            </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li class="products__item">
+          <img class="products__itemImg" src="img/exampleProduct.jpg">
+          <div class="products__productInfo">
+            <div class="products__productName">Газоблок D600</div>
+          <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Ширина, мм</div>
+            <div class="products__productPropVal">300</div>
+          </div>
+          <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Длина, мм</div>
+            <div class="products__productPropVal">265</div>
+          </div>
+            <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Высота, мм</div>
+            <div class="products__productPropVal">250</div>
+          </div>
+            <div class="products__productProp_styleDiv">
+            <div class="products__productProp">Плотность</div>
+            <div class="products__productPropVal">D600</div>
+          </div>
+            <button class="products__productInfoBtn">подробнее</button>
+          </div>
+          </li>
+          <li class="products__item">
+        <img class="products__itemImg" src="img/exampleProduct.jpg">
+        <div class="products__productInfo">
+          <div class="products__productName">Газоблок D600</div>
+        <div class="products__productProp_styleDiv">
+          <div class="products__productProp">Ширина, мм</div>
+          <div class="products__productPropVal">300</div>
+        </div>
+        <div class="products__productProp_styleDiv">
+          <div class="products__productProp">Длина, мм</div>
+          <div class="products__productPropVal">265</div>
+        </div>
+          <div class="products__productProp_styleDiv">
+          <div class="products__productProp">Высота, мм</div>
+          <div class="products__productPropVal">250</div>
+        </div>
+          <div class="products__productProp_styleDiv">
+          <div class="products__productProp">Плотность</div>
+          <div class="products__productPropVal">D600</div>
+        </div>
+          <button class="products__productInfoBtn">подробнее</button>
+        </div>
+          </li>
+          <li class="products__item">
+      <img class="products__itemImg" src="img/exampleProduct.jpg">
+      <div class="products__productInfo">
+        <div class="products__productName">Газоблок D600</div>
+      <div class="products__productProp_styleDiv">
+        <div class="products__productProp">Ширина, мм</div>
+        <div class="products__productPropVal">300</div>
+      </div>
+      <div class="products__productProp_styleDiv">
+        <div class="products__productProp">Длина, мм</div>
+        <div class="products__productPropVal">265</div>
+      </div>
+        <div class="products__productProp_styleDiv">
+        <div class="products__productProp">Высота, мм</div>
+        <div class="products__productPropVal">250</div>
+      </div>
+        <div class="products__productProp_styleDiv">
+        <div class="products__productProp">Плотность</div>
+        <div class="products__productPropVal">D600</div>
+      </div>
+        <button class="products__productInfoBtn">подробнее</button>
+      </div>
+          </li>
+        </ul>
+        <div class="products__showMore">
+          <div class="products__showMore_btnAndText">
+          <button class="products__showMoreBtn">   
+            <img
+              src="img/showMoreBtn.svg"
+              class="products__showMoreSvg"
+              alt="show more"
+              width="50"
+              height="50"
+            />
+        </button>
+          <div class="products__showMore_btnText">показать ещё</div>
+        </div>
+        </div>
+      </div>
+    </div>
   <script src="js/scrollDetected.js"></script>
   <script src="js/mobileMenu.js"></script>
-
   <style scoped>
     .block1 {
       background-image: url("img/block1.jpg");
@@ -108,5 +289,8 @@
 
   </style>
 </body>
-
+    <script src="js/scrollDetected.js"></script>
+    <script src="js/mobileMenu.js"></script>
+    <script src="js/showMoreProducts.js"></script>
+  </body>
 </html>
