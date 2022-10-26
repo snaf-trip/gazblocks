@@ -4,6 +4,7 @@
 @import url(block1.css);
 @import url(products.css);
 @import url(ownProduction.css);
+@import url(houses.css);
 
 .no-scroll {
   overflow: hidden;
@@ -12,4 +13,7 @@
 .container {
   max-width: 1180px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -48,6 +48,7 @@
   background-color: rgba(0, 0, 0, 0);
   transition: 0.6s;
   cursor: pointer;
+  padding-bottom: 4px;
 }
 
 .block1__catalogBtn:hover {
