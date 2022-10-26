@@ -1,0 +1,44 @@
+.contacts {
+  background-color: #1f2833;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  width: 780px;
+  height: 550px;
+  background-color: antiquewhite;
+}
+
+.card {
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+}
+
+.card__mainHeader {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.card__header {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card__data {
+  font-size: 17px;
+  max-width: 300px;
+}
+
+.card__data_contact {
+  color: #00dece;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: medium;
+}
