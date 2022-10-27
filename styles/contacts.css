@@ -1,9 +1,21 @@
+h1,
+h2 {
+  margin: 0;
+}
+
 .contacts {
   background-color: #1f2833;
   min-height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.map_style {
+  width: 780px;
+  max-width: 780px;
 }
 
 .map {
@@ -18,10 +30,14 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding-left: 55px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding-left: 35px;
 }
 
 .card__mainHeader {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 55px;
   font-weight: bold;
 }
@@ -32,8 +48,10 @@
 }
 
 .card__data {
+  justify-content: center;
   font-size: 17px;
   max-width: 300px;
+  margin-bottom: 25px;
 }
 
 .card__data_contact {
@@ -41,4 +59,34 @@
   text-decoration: underline;
   font-size: 20px;
   font-weight: medium;
+}
+
+.card__dotesSvg {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 870px) {
+  .card {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    justify-content: center;
+    flex-direction: column;
+    height: 1496px;
+  }
+  .card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 550px;
+    padding-left: 30px;
+  }
+  .map_style {
+    width: 100%;
+    height: 650px;
+    margin-top: 40px;
+  }
 }
