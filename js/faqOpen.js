@@ -1,4 +1,3 @@
-
 const questions = document.querySelectorAll(".faq__question");
 for (let i = 0; i <= questions.length; i++) {
   let question = questions[i];
@@ -11,5 +10,3 @@ for (let i = 0; i <= questions.length; i++) {
     console.log(question.id)
   }
 }
-
-
