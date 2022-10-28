@@ -31,16 +31,9 @@
   display: none;
 }
 
-.test {
-  height: 1000px;
-}
-
 .header__mobileMenu {
   display: none;
 }
-
-
-
 
 @media (max-width: 785px) {
   .header {
