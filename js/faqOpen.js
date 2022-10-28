@@ -7,6 +7,5 @@ for (let i = 0; i <= questions.length; i++) {
     let answer = question.querySelector(".faq__ansverText");
     arrow.classList.toggle("faq__arrow_open");
     answer.classList.toggle("faq__ansverText_open");
-    console.log(question.id)
-  }
+  };
 }
