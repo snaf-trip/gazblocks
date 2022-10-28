@@ -6,6 +6,7 @@
 @import url(ownProduction.css);
 @import url(houses.css);
 @import url(contacts.css);
+@import url(faq.css);
 
 .no-scroll {
   overflow: hidden;
