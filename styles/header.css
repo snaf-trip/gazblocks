@@ -12,7 +12,6 @@
 }
 
 .header__navBlock {
-  /* font-family: "Circe"; */
   font-size: 17px;
   text-transform: uppercase;
   color: #ffffff;
@@ -85,7 +84,6 @@
     font-size: 24px;
     line-height: 35px;
     text-transform: uppercase;
-    /* margin: 40px 0 30px; */
   }
 
   .header__mobileNavItem:active {
