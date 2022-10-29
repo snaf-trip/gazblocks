@@ -1,11 +1,12 @@
-/* сюда писать импорты других scss файлов */
 @import url(normalize.css);
 @import url(header.css);
 @import url(block1.css);
 @import url(products.css);
 @import url(ownProduction.css);
 @import url(houses.css);
+@import url(contacts.css);
 @import url(faq.css);
+@import url(footer.css);
 
 .no-scroll {
   overflow: hidden;
