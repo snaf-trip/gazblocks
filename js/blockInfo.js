@@ -1,9 +1,12 @@
 let blocks = document.querySelectorAll(".products__item");
 let popup = document.querySelector(".popup");
 let popupContent = document.querySelector(".popup-content");
-let popupHeader = document.querySelector(".popup__header");
 let popupImg = popupContent.querySelector(".popup__img");
 let closeBtn = document.querySelector(".popup__closeSvg");
+let width = document.querySelector(".width");
+let length = document.querySelector(".length");
+let height = document.querySelector(".height");
+let density = document.querySelector(".density");
 
 for (let i = 0; i <= blocks.length; i++) {
   let block = blocks[i];
@@ -11,9 +14,10 @@ for (let i = 0; i <= blocks.length; i++) {
   button.onclick = function () {
     popup.classList.remove("hidden");
 
-    // popupHeader.textContent = block.querySelector(
-    //   ".products__productName"
-    // ).textContent;
+    width.textContent = block.querySelector(".product__width").textContent;
+    length.textContent = block.querySelector(".product__length").textContent;
+    height.textContent = block.querySelector(".product__height").textContent;
+    density.textContent = block.querySelector(".product__density").textContent;
 
     popupImg.src = block.querySelector(".products__itemImg").src;
 
