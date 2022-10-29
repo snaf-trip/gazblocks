@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .products {
   min-height: 972px;
   background-color: #1f2833;
@@ -39,8 +43,8 @@
 }
 
 .products__item {
-  margin-right: 17px;
-  margin-left: 17px;
+  margin-right: 12px;
+  margin-left: 12px;
   margin-bottom: 27px;
   background-color: #fff;
   width: 330px;
@@ -175,6 +179,13 @@
   justify-content: center;
 }
 
+.popup__closeSvg {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: calc(100% - 60px);
+}
+
 .popup {
   width: 100%;
   min-height: 100%;
@@ -187,12 +198,104 @@
   justify-content: center;
 }
 .popup .popup-content {
-  width: 100px;
-  height: 40px;
-  padding: 10px;
-  background-color: #c5c5c5;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #000;
+  box-sizing: border-box;
+  width: 1040px;
+  height: 570px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.popup__blockInfo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  padding-right: 111px;
+}
+
+.popup__img {
+  width: 414px;
+  height: 322px;
+  margin-right: 41px;
+  margin-left: 41px;
+}
+
+.popup-content {
+  position: relative;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+
+.popup__header {
+  font-weight: bold;
+  font-size: 33px;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+}
+
+.popup__styleDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d4d4d4;
+  height: 38px;
+  font-size: 22px;
+  color: #414141;
+}
+
+.popup__productProp {
+  color: #414141;
+  font-size: 20px;
+}
+
+.popup__productPropVal {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.popup__info {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.popup__contacts {
+  height: 80px;
+  max-width: 234px;
+  padding-right: 25px;
+  border-right: 2px solid #d4d4d4;
+  color: #414141;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25.06px;
+}
+
+.popup__priceBlock {
+  white-space: nowrap;
+  width: 142px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__price {
+  margin: 0;
+  color: #262424;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.popup__priceText {
+  font-size: 16px;
+  color: #a2a2a2;
+}
+
+.popup__phone {
+  color: #959595;
+  font-size: 19px;
+  text-decoration: none;
 }
 
 .hidden {
