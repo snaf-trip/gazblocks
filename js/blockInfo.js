@@ -13,7 +13,7 @@ for (let i = 0; i <= blocks.length; i++) {
   let button = block.querySelector(".products__productInfoBtn");
   button.onclick = function () {
     popup.classList.remove("hidden");
-
+    body.classList.add("no-scroll");
     width.textContent = block.querySelector(".product__width").textContent;
     length.textContent = block.querySelector(".product__length").textContent;
     height.textContent = block.querySelector(".product__height").textContent;
@@ -22,6 +22,7 @@ for (let i = 0; i <= blocks.length; i++) {
     popupImg.src = block.querySelector(".products__itemImg").src;
 
     closeBtn.onclick = function () {
+      body.classList.remove("no-scroll");
       popup.classList.add("hidden");
     };
   };
