@@ -309,7 +309,7 @@ p {
 
 @media screen and (max-width: 1000px) {
   .popup {
-    padding-top: 42px;
+    padding-top: 40px;
   }
 
   .popup .popup-content {

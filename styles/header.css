@@ -20,6 +20,8 @@
 .header__navItem {
   margin-left: 40px;
   cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .header__navItem:hover {
@@ -84,6 +86,7 @@
     font-size: 24px;
     line-height: 35px;
     text-transform: uppercase;
+    text-decoration: none;
   }
 
   .header__mobileNavItem:active {

@@ -38,6 +38,10 @@
   color: #D4D4D4;
 }
 
+.footer__contactLink:hover {
+  color: #66FCF1;
+}
+
 .footer__contactsLine {
   max-width: 185px;
   height: 1px;
@@ -70,5 +74,9 @@
   .footer__contactsList {
     padding: 0;
     margin: 0;
+  }
+
+  .footer__contactsLine {
+    height: 1px;
   }
 }
