@@ -35,8 +35,6 @@ h2 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding-left: 35px;
 }
 
@@ -67,6 +65,10 @@ h2 {
   text-decoration: underline;
   font-size: 20px;
   font-weight: medium;
+}
+
+.card__data_contact:hover {
+  color: #414141;
 }
 
 .card__dotesSvg {
