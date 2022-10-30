@@ -9,13 +9,12 @@ h2 {
 
 .contacts {
   background-color: #1f2833;
-  min-height: 900px;
+  min-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 25px;
   padding-right: 25px;
-  margin-top: 80px;
 }
 
 .map_style {
