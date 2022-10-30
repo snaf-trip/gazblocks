@@ -1,407 +1,545 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>ПСК Газоблоки</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <title>ПСК Газоблоки</title>
-</head>
+  <body id="body">
+    <header class="header" id="header">
+      <img
+        src="img/logo.svg"
+        class="header__logo"
+        alt="logo"
+        width="89"
+        height="29"
+      />
+      <nav class="header__navBlock">
+        <a class="header__navItem">Производство</a>
+        <a class="header__navItem">Каталог</a>
+        <a class="header__navItem">Контакты</a>
+        <a class="header__navItem">FAQ</a>
+      </nav>
 
-<!-- < id="body"> -->
-<header class="header" id="header">
-  <img src="img/logo.svg" class="header__logo" alt="logo" width="89" height="29" />
-  <nav class="header__navBlock">
-    <a class="header__navItem">Производство</a>
-    <a class="header__navItem">Каталог</a>
-    <a class="header__navItem">Контакты</a>
-    <a class="header__navItem">FAQ</a>
-  </nav>
-
-  <div class="header__menuButton">
-    <svg>
-      <defs>
-        <filter id="gooeyness">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
-            result="gooeyness" />
-          <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-        </filter>
-      </defs>
-    </svg>
-    <div class="plate plate4" onclick="this.classList.toggle('active')">
-      <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-        <path class="line line1" d="M 50,35 H 30" />
-        <path class="line line2" d="M 50,35 H 70" />
-        <path class="line line3" d="M 50,50 H 30" />
-        <path class="line line4" d="M 50,50 H 70" />
-        <path class="line line5" d="M 50,65 H 30" />
-        <path class="line line6" d="M 50,65 H 70" />
-      </svg>
-      <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-        <path class="line" d="M 34,32 L 66,68" />
-        <path class="line" d="M 66,32 L 34,68" />
-      </svg>
-    </div>
-  </div>
-
-  <div class="header__mobileMenu">
-    <nav class="header__mobileNavBlock">
-      <a class="header__mobileNavItem">Производство</a>
-      <hr class="header__mobileLine" size="1px" />
-      <a class="header__mobileNavItem">Каталог</a>
-      <hr class="header__mobileLine" size="1px" />
-      <a class="header__mobileNavItem">Контакты</a>
-      <hr class="header__mobileLine" size="1px" />
-      <a class="header__mobileNavItem">FAQ</a>
-    </nav>
-  </div>
-</header>
-
-<div class="block1">
-  <div class="block1__content">
-    <h1 class="block1__title">Газобетонные блоки</h1>
-    <p class="block1__text">
-      Текст заглушка коротенький типо какое-то кратенькое описание.
-      Кратенькое описание текст заглушка коротенький типо какое-то. Бла бла
-      ба Как то так вобщем чет нужно написать.
-    </p>
-    <a class="block1__catalogBtn">каталог</a>
-  </div>
-</div>
-
-<div class="container">
-  <div class="ownProduction__content">
-    <h1 class="ownProduction__title">Собственное производство</h1>
-    <div class="ownProduction__titleLine"></div>
-    <p class="ownProduction__text">
-      Наш завод находится недалеко от г. Голицыно Одинцовского района. Близость к
-      Можайскому, Минскому, Новорижскому шоссе,
-      наличие манипуляторов и длинномеров позволяет предлагать самые демократичные цены на доставку блоков.
-      <br><br>
-      Мы производим блоки из ячеистого бетона уже 12 лет и знаем о правильной технологии изготовления блоков всё.
-      Если
-      новые технологии в производстве газобетона входят на рынок, мы узнаем о них первыми и только лучшие и
-      проверенные в лабораторных условиях внедряем в наше производство. Все партии блоков в обязательном порядке, не
-      зависимо от плотности и прочности, армируются полипропиленовой фиброй, которая в разы увеличивает
-      морозостойкость и исключает усадочные трещины.
-    </p>
-  </div>
-</div>
-
-<div class="products">
-  <div class="products__content">
-    <h1 class="products__title">Наша продукция</h1>
-    <ul class="products__list">
-      <li class="products__item">
-        <img class="products__itemImg" src="img/exampleProduct.jpg">
-        <div class="products__productInfo">
-          <h3 class="products__productName">Газоблок D600</h3>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Ширина, мм</div>
-            <div class="products__productPropVal">300</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Длина, мм</div>
-            <div class="products__productPropVal">265</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Высота, мм</div>
-            <div class="products__productPropVal">250</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Плотность</div>
-            <div class="products__productPropVal">D600</div>
-          </div>
-          <button class="products__productInfoBtn">подробнее</button>
+      <div class="header__menuButton">
+        <svg>
+          <defs>
+            <filter id="gooeyness">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="2.2"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="gooeyness"
+              />
+              <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="plate plate4" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 50,35 H 30" />
+            <path class="line line2" d="M 50,35 H 70" />
+            <path class="line line3" d="M 50,50 H 30" />
+            <path class="line line4" d="M 50,50 H 70" />
+            <path class="line line5" d="M 50,65 H 30" />
+            <path class="line line6" d="M 50,65 H 70" />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
         </div>
-      </li>
-      <li class="products__item">
-        <img class="products__itemImg" src="img/exampleProduct.jpg">
-        <div class="products__productInfo">
-          <div class="products__productName">Газоблок D600</div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Ширина, мм</div>
-            <div class="products__productPropVal">300</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Длина, мм</div>
-            <div class="products__productPropVal">265</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Высота, мм</div>
-            <div class="products__productPropVal">250</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Плотность</div>
-            <div class="products__productPropVal">D600</div>
-          </div>
-          <button class="products__productInfoBtn">подробнее</button>
-        </div>
-      </li>
-      <li class="products__item">
-        <img class="products__itemImg" src="img/exampleProduct.jpg">
-        <div class="products__productInfo">
-          <div class="products__productName">Газоблок D600</div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Ширина, мм</div>
-            <div class="products__productPropVal">300</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Длина, мм</div>
-            <div class="products__productPropVal">265</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Высота, мм</div>
-            <div class="products__productPropVal">250</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Плотность</div>
-            <div class="products__productPropVal">D600</div>
-          </div>
-          <button class="products__productInfoBtn">подробнее</button>
-        </div>
-      </li>
-      <li class="products__item">
-        <img class="products__itemImg" src="img/exampleProduct.jpg">
-        <div class="products__productInfo">
-          <div class="products__productName">Газоблок D600</div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Ширина, мм</div>
-            <div class="products__productPropVal">300</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Длина, мм</div>
-            <div class="products__productPropVal">265</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Высота, мм</div>
-            <div class="products__productPropVal">250</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Плотность</div>
-            <div class="products__productPropVal">D600</div>
-          </div>
-          <button class="products__productInfoBtn">подробнее</button>
-        </div>
-      </li>
-      <li class="products__item">
-        <img class="products__itemImg" src="img/exampleProduct.jpg">
-        <div class="products__productInfo">
-          <div class="products__productName">Газоблок D600</div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Ширина, мм</div>
-            <div class="products__productPropVal">300</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Длина, мм</div>
-            <div class="products__productPropVal">265</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Высота, мм</div>
-            <div class="products__productPropVal">250</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Плотность</div>
-            <div class="products__productPropVal">D600</div>
-          </div>
-          <button class="products__productInfoBtn">подробнее</button>
-        </div>
-      </li>
-      <li class="products__item">
-        <img class="products__itemImg" src="img/exampleProduct.jpg">
-        <div class="products__productInfo">
-          <div class="products__productName">Газоблок D600</div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Ширина, мм</div>
-            <div class="products__productPropVal">300</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Длина, мм</div>
-            <div class="products__productPropVal">265</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Высота, мм</div>
-            <div class="products__productPropVal">250</div>
-          </div>
-          <div class="products__productProp_styleDiv">
-            <div class="products__productProp">Плотность</div>
-            <div class="products__productPropVal">D600</div>
-          </div>
-          <button class="products__productInfoBtn">подробнее</button>
-        </div>
-      </li>
-    </ul>
-    <div class="products__showMore">
-      <div class="products__showMore_btnAndText">
-        <button class="products__showMoreBtn">
-          <img src="img/showMoreBtn.svg" class="products__showMoreSvg" alt="show more" width="50" height="50" />
-        </button>
-        <div class="products__showMore_btnText">показать ещё</div>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="container">
-  <!-- <img src="img/houses.jpg" class="houses__background" width="1180" height="700"> -->
-  <div class="houses">
-    <div class="houses__content">
-      <div>
-        <h1 class="houses__title">Строительство дома из газобетона</h1>
-        <div class="houses__titleLine"></div>
+      <div class="header__mobileMenu">
+        <nav class="header__mobileNavBlock">
+          <a class="header__mobileNavItem">Производство</a>
+          <hr class="header__mobileLine" size="1px" />
+          <a class="header__mobileNavItem">Каталог</a>
+          <hr class="header__mobileLine" size="1px" />
+          <a class="header__mobileNavItem">Контакты</a>
+          <hr class="header__mobileLine" size="1px" />
+          <a class="header__mobileNavItem">FAQ</a>
+        </nav>
       </div>
-      <p class="houses__text">
-        Мы так же занимаемся строительcтвом домов из газобетона под ключ.
-        В строительстве мы используем газобетон собственного производства.
-        <br>
-        Газобетон — золотой стандарт современного малоэтажного строительства. Материал позволяет возводить двух- и
-        трехэтажные
-        постройки за считаные месяцы, значительно экономя силы и средства. Дома из газобетонных блоков не требуют
-        мощных
-        и
-        сложных фундаментов, что еще больше сокращает стоимость и трудоемкость работ.
-      </p>
-      <a href="" class="houses__more">узнать подробнее</a>
-    </div>
-  </div>
-</div>
+    </header>
 
-<address class="contacts">
-  <div class="card">
-    <h1 class="card__mainHeader">Контакты</h1>
-    <h2 class="card__header">Адрес</h2>
-    <div class="card__data">620109, Свердловская область,
-      <br>
-      гор. Екатеринбург, ул. Татищева д. 53
+    <div class="block1">
+      <div class="block1__content">
+        <h1 class="block1__title">Газобетонные блоки</h1>
+        <p class="block1__text">
+          Текст заглушка коротенький типо какое-то кратенькое описание.
+          Кратенькое описание текст заглушка коротенький типо какое-то. Бла бла
+          ба Как то так вобщем чет нужно написать.
+        </p>
+        <a class="block1__catalogBtn">каталог</a>
+      </div>
     </div>
-    <h2 class="card__header">Режим работы</h2>
-    <div class="card__data">
-      Пн-Чт, с 9:00 до 18:00
-      <br>Пт, с 9:00 до 16:00
-      <br>Сб-Вс - нерабочие дни
-    </div>
-    <h2 class="card__header">Телефон</h2>
-    <a href="tel:+78008008080" class="card__data card__data_contact">+7-800-800-80-80</a>
-    <h2 class="card__header">Почта</h2>
-    <a href="mailto:mail@mail.com" class="card__data card__data_contact">mail@mail.com</a>
-    <img src="img/contactsDotes.svg" class="card__dotesSvg" width="65" height="15" />
 
-  </div>
-  <div class="map_style">
-    <script class="map" type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3ab570d3b70320afceae51366c62d229afa3dca13a73080fd40d5b23626dbd34&amp;width=100%&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
-  </div>
-</address>
+    <div class="container">
+      <div class="ownProduction__content">
+        <h1 class="ownProduction__title">Собственное производство</h1>
+        <div class="ownProduction__titleLine"></div>
+        <p class="ownProduction__text">
+          Наш завод находится недалеко от г. Голицыно Одинцовского района.
+          Близость к Можайскому, Минскому, Новорижскому шоссе, наличие
+          манипуляторов и длинномеров позволяет предлагать самые демократичные
+          цены на доставку блоков.
+          <br /><br />
+          Мы производим блоки из ячеистого бетона уже 12 лет и знаем о
+          правильной технологии изготовления блоков всё. Если новые технологии в
+          производстве газобетона входят на рынок, мы узнаем о них первыми и
+          только лучшие и проверенные в лабораторных условиях внедряем в наше
+          производство. Все партии блоков в обязательном порядке, не зависимо от
+          плотности и прочности, армируются полипропиленовой фиброй, которая в
+          разы увеличивает морозостойкость и исключает усадочные трещины.
+        </p>
+      </div>
+    </div>
 
-<div class="container">
-  <div class="faq">
-    <div class="faq__question" id="question1">
-      <div class="faq__text">
-        <h2 class="faq__questionText">
-          Есть ли доставка?
-        </h2>
-        <p class="faq__ansverText">Ответ</p>
-      </div>
-      <img src="img/faqArrow.svg" class="faq__arrow" width="30" height="30">
-    </div>
-    <div class="faq__question" id="question2">
-      <div class="faq__text">
-        <h2 class="faq__questionText">
-          Существует ли самовывоз?
-        </h2>
-        <p class="faq__ansverText">Ответ</p>
-      </div>
-      <img src="img/faqArrow.svg" class="faq__arrow" width="30" height="30">
-    </div>
-    <div class="faq__question" id="question3">
-      <div class="faq__text">
-        <h2 class="faq__questionText">
-          Каков минимальный заказ?
-        </h2>
-        <p class="faq__ansverText">Ответ</p>
-      </div>
-      <img src="img/faqArrow.svg" class="faq__arrow" width="30" height="30">
-    </div>
-    <div class="faq__question" id="question4" on>
-      <div class="faq__text">
-        <h2 class="faq__questionText">
-          Что-то ещё
-        </h2>
-        <p class="faq__ansverText">Ответ</p>
-      </div>
-      <img src="img/faqArrow.svg" class="faq__arrow" width="30" height="30">
-    </div>
-    <div class="faq__question" id="question5">
-      <div class="faq__text">
-        <h2 class="faq__questionText">
-          Я не нашел ответ на свой вопрос
-        </h2>
-        <p class="faq__ansverText">Ответ</p>
-      </div>
-      <img src="img/faqArrow.svg" class="faq__arrow" width="30" height="30">
-    </div>
-  </div>
-</div>
+    <div class="products">
+      <div class="products__content">
+        <h1 class="products__title">Наша продукция</h1>
+        <ul class="products__list">
+          <li id="block1" class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg" />
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D100</div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Ширина, мм</div>
+                <div class="products__productPropVal product__width">300</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Длина, мм</div>
+                <div class="products__productPropVal product__length">265</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Высота, мм</div>
+                <div class="products__productPropVal product__height">250</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Плотность</div>
+                <div class="products__productPropVal product__density">
+                  D100
+                </div>
+              </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li id="block2" class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg" />
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D200</div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Ширина, мм</div>
+                <div class="products__productPropVal product__width">300</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Длина, мм</div>
+                <div class="products__productPropVal product__length">265</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Высота, мм</div>
+                <div class="products__productPropVal product__height">250</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Плотность</div>
+                <div class="products__productPropVal product__density">
+                  D200
+                </div>
+              </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li id="block3" class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg" />
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D300</div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Ширина, мм</div>
+                <div class="products__productPropVal product__width">300</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Длина, мм</div>
+                <div class="products__productPropVal product__length">265</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Высота, мм</div>
+                <div class="products__productPropVal product__height">250</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Плотность</div>
+                <div class="products__productPropVal product__density">
+                  D300
+                </div>
+              </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li id="block4" class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg" />
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D400</div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Ширина, мм</div>
+                <div class="products__productPropVal product__width">300</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Длина, мм</div>
+                <div class="products__productPropVal product__length">265</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Высота, мм</div>
+                <div class="products__productPropVal product__height">250</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Плотность</div>
+                <div class="products__productPropVal product__density">
+                  D400
+                </div>
+              </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li id="block5" class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg" />
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D500</div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Ширина, мм</div>
+                <div class="products__productPropVal product__width">300</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Длина, мм</div>
+                <div class="products__productPropVal product__length">265</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Высота, мм</div>
+                <div class="products__productPropVal product__height">250</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Плотность</div>
+                <div class="products__productPropVal product__density">
+                  D500
+                </div>
+              </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+          <li id="block6" class="products__item">
+            <img class="products__itemImg" src="img/exampleProduct.jpg" />
+            <div class="products__productInfo">
+              <div class="products__productName">Газоблок D600</div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Ширина, мм</div>
+                <div class="products__productPropVal product__width">300</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Длина, мм</div>
+                <div class="products__productPropVal product__length">265</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Высота, мм</div>
+                <div class="products__productPropVal product__height">250</div>
+              </div>
+              <div class="products__productProp_styleDiv">
+                <div class="products__productProp">Плотность</div>
+                <div class="products__productPropVal product__density">
+                  D600
+                </div>
+              </div>
+              <button class="products__productInfoBtn">подробнее</button>
+            </div>
+          </li>
+        </ul>
 
-<footer class="footer">
-  <div class="footer__company">
-    <img src="img/logo.svg" class="footer__logo" alt="logo" width="217" height="69">
-    <p class="footer__text">Производство качественных газоблоков в Екатеринбурге и Свердловской области</p>
-  </div>
-  <div class="footer__contacts">
-    <address class="footer__adderss">
-      <ul class="footer__contactsList">
-        <li class="footer__contact">
-          <img src="img/phone.svg" class="footer__contactIcon" width="15" height="15">
-          <a href="tel:+78008008080" class="footer__contactLink">+7-800-800-80-80</a>
-        </li>
-        <div class="footer__contactsLine"></div>
-        <li class="footer__contact">
-          <img src="img/mail.svg" class="footer__contactIcon" width="15" height="15">
-          <a href="mailto: mail@mail.ru" class="footer__contactLink">mail@mail.ru</a>
-        </li>
-        <div class="footer__contactsLine"></div>
-        <li class="footer__contact" size="1px">
-          <img src="img/geomarker.svg" class="footer__contactIcon" width="15" height="15">
-          620109, Екатеринбург, Татищева, 53
-        </li>
-      </ul>
+        <div class="products__showMore">
+          <div class="products__showMore_btnAndText">
+            <button class="products__showMoreBtn">
+              <img
+                src="img/showMoreBtn.svg"
+                class="products__showMoreSvg"
+                alt="show more"
+                width="50"
+                height="50"
+              />
+            </button>
+            <div class="products__showMore_btnText">показать ещё</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup hidden">
+      <div class="popup-content">
+        <img src="img/popupClose.svg" class="popup__closeSvg" />
+        <img class="popup__img" />
+
+        <div class="popup__blockInfo">
+          <h1 class="popup__header">Характеристики</h1>
+          <div class="popup__styleDiv">
+            <div class="popup__productProp">Ширина, мм</div>
+            <div class="popup__productPropVal width">123</div>
+          </div>
+          <div class="popup__styleDiv">
+            <div class="popup__productProp">Длина, мм</div>
+            <div class="popup__productPropVal length"></div>
+          </div>
+          <div class="popup__styleDiv">
+            <div class="popup__productProp">Высота, мм</div>
+            <div class="popup__productPropVal height"></div>
+          </div>
+          <div class="popup__styleDiv">
+            <div class="popup__productProp">Плотность</div>
+            <div class="popup__productPropVal density"></div>
+          </div>
+          <div class="popup__styleDiv">
+            <div class="popup__productProp">Морозостойкость, циклов</div>
+            <div class="popup__productPropVal">150</div>
+          </div>
+
+          <div class="popup__info">
+            <p class="popup__contacts">
+              Узнать подробнее о товаре или сделать заказ вы можете по телефону:
+              <a class="popup__phone" href="tel:+79999999999">+79999999999</a>
+            </p>
+            <div class="popup__priceBlock">
+              <p class="popup__price">4500 руб.</p>
+              <p class="popup__priceText">цена за м&sup3;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- <img src="img/houses.jpg" class="houses__background" width="1180" height="700"> -->
+      <div class="houses">
+        <div class="houses__content">
+          <div>
+            <h1 class="houses__title">Строительство дома из газобетона</h1>
+            <div class="houses__titleLine"></div>
+          </div>
+          <p class="houses__text">
+            Мы так же занимаемся строительcтвом домов из газобетона под ключ. В
+            строительстве мы используем газобетон собственного производства.
+            <br />
+            Газобетон — золотой стандарт современного малоэтажного
+            строительства. Материал позволяет возводить двух- и трехэтажные
+            постройки за считаные месяцы, значительно экономя силы и средства.
+            Дома из газобетонных блоков не требуют мощных и сложных фундаментов,
+            что еще больше сокращает стоимость и трудоемкость работ.
+          </p>
+          <a href="" class="houses__more">узнать подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <address class="contacts">
+      <div class="card">
+        <h1 class="card__mainHeader">Контакты</h1>
+        <h2 class="card__header">Адрес</h2>
+        <div class="card__data">
+          620109, Свердловская область,
+          <br />
+          гор. Екатеринбург, ул. Татищева д. 53
+        </div>
+        <h2 class="card__header">Режим работы</h2>
+        <div class="card__data">
+          Пн-Чт, с 9:00 до 18:00
+          <br />Пт, с 9:00 до 16:00 <br />Сб-Вс - нерабочие дни
+        </div>
+        <h2 class="card__header">Телефон</h2>
+        <a href="tel:+78008008080" class="card__data card__data_contact"
+          >+7-800-800-80-80</a
+        >
+        <h2 class="card__header">Почта</h2>
+        <a href="mailto:mail@mail.com" class="card__data card__data_contact"
+          >mail@mail.com</a
+        >
+        <img
+          src="img/contactsDotes.svg"
+          class="card__dotesSvg"
+          width="65"
+          height="15"
+        />
+      </div>
+      <div class="map_style">
+        <script
+          class="map"
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3ab570d3b70320afceae51366c62d229afa3dca13a73080fd40d5b23626dbd34&amp;width=100%&amp;height=550&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </div>
     </address>
-  </div>
-</footer>
 
-<script src="js/scrollDetected.js"></script>
-<script src="js/mobileMenu.js"></script>
-<style scoped>
-  .block1 {
-    background-image: url("img/block1.jpg");
-  }
+    <div class="container">
+      <div class="faq">
+        <div class="faq__question" id="question1">
+          <div class="faq__text">
+            <h2 class="faq__questionText">Есть ли доставка?</h2>
+            <p class="faq__ansverText">Ответ</p>
+          </div>
+          <img
+            src="img/faqArrow.svg"
+            class="faq__arrow"
+            width="30"
+            height="30"
+          />
+        </div>
+        <div class="faq__question" id="question2">
+          <div class="faq__text">
+            <h2 class="faq__questionText">Существует ли самовывоз?</h2>
+            <p class="faq__ansverText">Ответ</p>
+          </div>
+          <img
+            src="img/faqArrow.svg"
+            class="faq__arrow"
+            width="30"
+            height="30"
+          />
+        </div>
+        <div class="faq__question" id="question3">
+          <div class="faq__text">
+            <h2 class="faq__questionText">Каков минимальный заказ?</h2>
+            <p class="faq__ansverText">Ответ</p>
+          </div>
+          <img
+            src="img/faqArrow.svg"
+            class="faq__arrow"
+            width="30"
+            height="30"
+          />
+        </div>
+        <div class="faq__question" id="question4" on>
+          <div class="faq__text">
+            <h2 class="faq__questionText">Что-то ещё</h2>
+            <p class="faq__ansverText">Ответ</p>
+          </div>
+          <img
+            src="img/faqArrow.svg"
+            class="faq__arrow"
+            width="30"
+            height="30"
+          />
+        </div>
+        <div class="faq__question" id="question5">
+          <div class="faq__text">
+            <h2 class="faq__questionText">Я не нашел ответ на свой вопрос</h2>
+            <p class="faq__ansverText">Ответ</p>
+          </div>
+          <img
+            src="img/faqArrow.svg"
+            class="faq__arrow"
+            width="30"
+            height="30"
+          />
+        </div>
+      </div>
+    </div>
 
-  @media (max-width: 900px) {
-    .block1 {
-      background-image: url("img/block1adaptive.jpg");
-    }
-  }
+    <footer class="footer">
+      <div class="footer__company">
+        <img
+          src="img/logo.svg"
+          class="footer__logo"
+          alt="logo"
+          width="217"
+          height="69"
+        />
+        <p class="footer__text">
+          Производство качественных газоблоков в Екатеринбурге и Свердловской
+          области
+        </p>
+      </div>
+      <div class="footer__contacts">
+        <address class="footer__adderss">
+          <ul class="footer__contactsList">
+            <li class="footer__contact">
+              <img
+                src="img/phone.svg"
+                class="footer__contactIcon"
+                width="15"
+                height="15"
+              />
+              <a href="tel:+78008008080" class="footer__contactLink"
+                >+7-800-800-80-80</a
+              >
+            </li>
+            <div class="footer__contactsLine"></div>
+            <li class="footer__contact">
+              <img
+                src="img/mail.svg"
+                class="footer__contactIcon"
+                width="15"
+                height="15"
+              />
+              <a href="mailto: mail@mail.ru" class="footer__contactLink"
+                >mail@mail.ru</a
+              >
+            </li>
+            <div class="footer__contactsLine"></div>
+            <li class="footer__contact" size="1px">
+              <img
+                src="img/geomarker.svg"
+                class="footer__contactIcon"
+                width="15"
+                height="15"
+              />
+              620109, Екатеринбург, Татищева, 53
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
 
-  .houses {
-    background-image: url("img/houses.jpg");
-  }
+    <style scoped>
+      .block1 {
+        background-image: url("img/block1.jpg");
+      }
 
-  @media (max-width: 1200px) {
-    .houses {
-      background-image: url("img/housesBig.jpg");
-    }
-  }
+      @media (max-width: 900px) {
+        .block1 {
+          background-image: url("img/block1adaptive.jpg");
+        }
+      }
 
-</style>
+      .houses {
+        background-image: url("img/houses.jpg");
+      }
 
-</body>
-<script src="js/scrollDetected.js"></script>
-<script src="js/mobileMenu.js"></script>
-<script src="js/showMoreProducts.js"></script>
-<script src="js/faqOpen.js"></script>
-</body>
-
+      @media (max-width: 1200px) {
+        .houses {
+          background-image: url("img/housesBig.jpg");
+        }
+      }
+    </style>
+  </body>
+  <script src="js/mobileMenu.js"></script>
+  <script src="js/scrollDetected.js"></script>
+  <script src="js/showMoreProducts.js"></script>
+  <script src="js/faqOpen.js"></script>
+  <script src="js/blockInfo.js"></script>
 </html>
