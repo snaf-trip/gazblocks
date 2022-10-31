@@ -51,6 +51,10 @@ p {
   height: 500px;
 }
 
+.products__moreMoveup {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 668px) {
   .products__item:nth-child(n + 3) {
     display: none;
