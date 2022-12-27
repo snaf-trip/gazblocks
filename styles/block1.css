@@ -64,6 +64,20 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .block1__title {
+    font-size: 44px;
+  }
+  .block1__text{
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+}
+
 @media screen and (max-width: 785px) {
   .block1 {
     height: calc(100vh - 60px);
@@ -72,7 +86,7 @@
 
 @media screen and (max-width: 475px) {
   .block1__title {
-    font-size: 48px;
+    font-size: 40px;
   }
   .block1__text{
     margin-top: 15px;
