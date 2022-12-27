@@ -269,8 +269,6 @@ p {
 .popup__contacts {
   height: 80px;
   max-width: 234px;
-  padding-right: 25px;
-  border-right: 2px solid #d4d4d4;
   color: #414141;
   font-weight: bold;
   font-size: 15px;
