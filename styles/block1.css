@@ -74,6 +74,12 @@
   .block1__title {
     font-size: 48px;
   }
+  .block1__text{
+    margin-top: 15px;
+  }
+  .block1__catalogBtn{
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 900px) {

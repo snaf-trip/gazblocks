@@ -81,6 +81,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 350px) {
+  .card__dotesSvg {
+    margin-top: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contacts {
     justify-content: center;
