@@ -41,7 +41,7 @@
 }
 
 .houses__text {
-  font-size: 22px;
+  font-size: 28px;
   color: #FFFFFF;
   margin: 0;
 }
@@ -73,6 +73,11 @@
 @media (max-width: 1200px) {
   .houses__content {
     padding: 25px;
+    justify-content: space-around;
+  }
+
+  .houses__text {
+    font-size: 25px;
   }
 }
 
