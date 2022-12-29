@@ -1,5 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-@font-face {
+/* @font-face {
   font-family: "Circe";
   font-style: normal;
   font-weight: 400;
@@ -25,7 +25,7 @@
   font-style: normal;
   font-weight: 700;
   src: local("Circe"), url("/fonts/circe/CRC65.otf");
-}
+} */
 
 /* Document
    ========================================================================== */
