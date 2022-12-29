@@ -6,7 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(90vh - 80px);
+  /* height: calc(90vh - 80px); */
+  height: 120vh;
   max-height: 737px;
   padding: 80px;
   margin: 80px 0;
